@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Indian Rap Music</title>
+    <link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/support.css">
+
+    <style>
+        /* Add CSS for link color */
+        a {
+            color: darkred;
+        }
+         
+        /* Add CSS for changing text color */
+        header h1 {
+            color: rgb(80, 0, 0);
+        }
+         /* Add CSS for background image */
+         body {
+            background-image: url("back.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* Adjust other styles as needed */
+        }
+         /* Popup CSS */
+         .popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgb(42, 219, 45);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .popup.show {
+            opacity: 1;
+        }
+    </style>
+    <!-- Name and Student Number -->
+    <!-- John Doe, Student ID: 12345678 -->
+</head>
+<body class="home">
+    <header>
+        <h1>Indian Rap Music</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hindi-rap.html">Hindi Rap</a></li>
+            <li><a href="punjabi-rap.html">Punjabi Rap</a></li>
+            <li><a href="support.html">Support</a></li>
+            <!-- New Production Section -->
+            <li><a href="production.html">Production</a></li>
+            <li><a href="home.php">creation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Welcome to the Latest Indian Rap Music</h2>
+        <section>
+            <h3>Latest Hindi Raps</h3>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=0dXiVYq8HBc" target="_blank">
+                        <img src="divine.jpeg" alt="100 Million by DIVINE and Karan Aujla" width="50" height="50">
+                        100 Million by DIVINE and Karan Aujla
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=COdmsmTkKvE" target="_blank">
+                        <img src="images (1).jpeg" alt="Illuminaughty by Raftaar" width="50" height="50">
+                        Illuminaughty by Raftaar
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=RPLD4hQuwY4" target="_blank">
+                        <img src="badshah.jpeg" alt="Gone Girl by Badshah" width="50" height="50">
+                        Gone Girl by Badshah
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Latest Punjabi Raps</h3>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=5ZKLM5pNoGQ" target="_blank">
+                        <img src="sidhu.jpeg" alt="Drippy by SIDHU MOOSE WALA and AR Paisley" width="50" height="50">
+                        Drippy by SIDHU MOOSE WALA and AR Paisley
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=2PhDMl04mFU" target="_blank">
+                        <img src="wazir patar.jpeg" alt="WE DIFFERENT by WAZIR PATAR" width="50" height="50">
+                        WE DIFFERENT by WAZIR PATAR
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=IakA6T1wGkU" target="_blank">
+                        <img src="bohemia.jpeg" alt="Vada Na Tod by BOHEMIA" width="50" height="50">
+                        Vada Na Tod by BOHEMIA
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <div class="popup" id="popup">Just Updated</div>
+    <script>
+        // JavaScript for popup
+        function showPopup() {
+            const popup = document.getElementById('popup');
+            popup.classList.add('show');
+            setTimeout(() => {
+                popup.classList.remove('show');
+            }, 1000); // show popup for 1 second
+        }
+
+        setInterval(showPopup, 2000); // show popup every 2 seconds
+    </script>
+</body>
+</html>
+
+

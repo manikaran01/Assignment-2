@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("background.jpeg"); /* Updated background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff; /* Light text color for better readability */
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for main content */
+    border-radius: 15px; /* Rounded corners */
+    margin: 2rem auto;
+    max-width: 1200px; /* Centered content */
+}
+
+h2 {
+    color: #f8f8f8; /* Light color for headers */
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for visibility */
+}
+
+section {
+    margin: 2rem 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px; /* Rounded corners for list items */
+    background-color: rgba(255, 255, 255, 0.3); /* Light transparent background */
+    color: #fff;
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
